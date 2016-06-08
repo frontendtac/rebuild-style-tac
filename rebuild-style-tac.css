@@ -1,0 +1,23 @@
+/* Rebuild Grid Class */
+.tac-main-box{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.tac-box-1{
+	width: 100%;
+}
+.tac-box-1-2{
+	width: 50%;
+}
+.tac-box-1-3{
+	width: 33.3%;
+}
+/* Rebuild Grid Class */
+
+/* ## Paliativo ## */
+.box-banner {
+	margin-bottom: 15px;
+}
