@@ -17,7 +17,14 @@
 }
 /* Rebuild Grid Class */
 
-/* ## Paliativo ## */
+
+
+/* ## Legado ## */
+
 .box-banner {
 	margin-bottom: 15px;
+}
+
+.prateleira ul li {
+	display: inline-block;
 }
