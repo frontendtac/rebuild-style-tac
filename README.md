@@ -1,2 +1,2 @@
 # rebuild-style-tac
- New independent style for reformulation of the frontend
+ New independent style to reformulation of the frontend
