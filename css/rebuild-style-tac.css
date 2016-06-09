@@ -27,4 +27,5 @@
 
 .prateleira ul li {
 	display: inline-block;
+	float: none;
 }
