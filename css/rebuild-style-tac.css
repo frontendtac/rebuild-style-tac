@@ -1,75 +1,80 @@
+/*
+  RST-TAC V.1.17
+*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
 /* Rebuild Grid Class */
 .tac-box-clear{
-	clear: both;
+  clear: both;
 }
 .tac-main-box{
-	position: relative;
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .tac-box-12 {
-	width: 100%;
+  width: 100%;
 }
 .tac-box-11 {
-	width: 91.66666667%;
+  width: 91.66666667%;
 }
 .tac-box-10 {
-	width: 83.33333333%;
+  width: 83.33333333%;
 }
 .tac-box-9 {
-	width: 75%;
+  width: 75%;
 }
 .tac-box-8 {
-	width: 66.66666667%;
+  width: 66.66666667%;
 }
 .tac-box-7 {
-	width: 58.33333333%;
+  width: 58.33333333%;
 }
 .tac-box-6 {
-	width: 50%;
+  width: 50%;
 }
 .tac-box-5 {
-	width: 41.66666667%;
+  width: 41.66666667%;
 }
 .tac-box-4 {
-	width: 33.33333333%;
+  width: 33.33333333%;
 }
 .tac-box-3 {
-	width: 25%;
+  width: 25%;
 }
 .tac-box-2 {
-	width: 16.66666667%;
+  width: 16.66666667%;
 }
 .tac-box-1 {
-	width: 8.33333333%;
+  width: 8.33333333%;
 }
 
 .tac-top-box {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .tac-bottom-box {
 }
 /* Rebuild Grid Class */
 
 .offers, .tac-box-default {
-	position: relative;
-	margin: 15px auto;
+  position: relative;
+  margin: 15px auto;
 }
 
 .offers ul li{
-	display: inline-block;
-	vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .tac-regua-home {
-	width: 100%;
-	max-width: 999px;
-	height: 64px;
+  width: 100%;
+  max-width: 1030px;
+  padding: 0 5px;
+  height: 64px;
     overflow: hidden;
     margin: 0 auto;
+  background-color: #fff;
 }
 .tac-regua-home a img {
     max-width: 17.8%;
@@ -77,8 +82,191 @@
     height: 100%;
 }
 
+/* Modal Cookie - Newsletter */
+#active-popup {
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Modal container */
+#popup-container {
+  width: 45%;
+  max-width: 701px;
+  height: 65%;
+  margin: 0 auto;
+  margin-top: 5%;
+  position: fixed;
+  left: 28%;
+  z-index: 999;
+  top: 0;
+  display: none;
+  background: transparent;
+}
+
+.modal-content {
+  position: relative;
+  text-align: center;
+}
+
+.modal-content *{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#popup-window { position: relative; }
+
+/* Close button */
+#popup-container a.close.btn-close {
+  position: relative;
+  float: right;
+  top: 0px;
+  right: -18px;
+  z-index: 99;  
+  background: url('http://toqueacampainha.vteximg.com.br/arquivos/close-modal.png');
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.fig-modal-tac {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-modal-tac {
+  width: calc(100% - 18px);
+  height: auto;
+  max-width: 701px;
+  max-height: 355px;
+}
+
+.content-modal {
+  position: relative;
+  width: calc(100% - 20px);
+  height: 150px;
+  padding: 20px 10px;
+  background-color: #f8f8f8;
+  color: #032143;
+  margin-top: -5px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 16px;
+}
+
+.content-modal:before{
+  content: '';
+  background-image: url('http://toqueacampainha.vteximg.com.br/arquivos/box-tab-left.gif');
+  width: 10px;
+  height: 11px;
+  position: absolute;
+  left: -1px;
+  top: -11px;
+}
+
+.content-modal:after{
+  content: '';
+  background-image: url('http://toqueacampainha.vteximg.com.br/arquivos/box-tab-right.gif');
+  width: 10px;
+  height: 11px;
+  position: absolute;
+  right: -1px;
+  top: -11px;
+}
+
+.content-modal h2{
+  font-weight: normal;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.content-modal p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.content-modal a{
+  color: #084388;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.success-msg {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.form-modal-default {
+  position: relative;
+}
+
+.form-modal-default input.input-modal-default{
+  border: 1px solid #e6e6e6;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.input-modal-default::-webkit-input-placeholder{
+   color: #000;
+}
+.input-modal-default:-moz-placeholder{
+   color: #000;
+}
+.input-modal-default::-moz-placeholder{
+   color: #000;
+}
+.input-modal-default:-ms-input-placeholder {
+   color: #000;
+}
+
+.btn-send-modal-form {
+  background-color: #ffcc32;
+  color: #032143;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  box-shadow: 0 -2px 0px 0 rgba(0,0,0,0.2) inset;
+  cursor: pointer;
+}
+
+.btn-send-modal-form:active,
+.btn-send-modal-form:hover{
+  opacity: 0.9;
+}
+
+p.right-text {
+  text-align: right;
+  font-size: 12px;
+}
+
+p.right-text a{
+  color: #a8a8a8;
+}
+
+.continueLink, .continueLink {
+  display: none;
+}
+/* Modal Cookie - Newsletter */
+
 /* ## Legado ## */
 
 .box-banner {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
+
+/* BG Home Personalizado */
+.home section#content{
+  background: #9e4041 !important;
+}
+/* BG Home Personalizado */
