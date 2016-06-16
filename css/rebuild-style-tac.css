@@ -278,6 +278,7 @@ p.right-text a{
 }
 /* BG Home Personalizado */
 
+/* Campanha Arraia */
 .figure-box-default {
   position: relative;
   font-family: 'Roboto Condensed', sans-serif;
@@ -289,7 +290,8 @@ p.right-text a{
   bottom: 37px;
   left: 26.5%;
   right: 0;
-  width: 375px;
+  max-width: 375px;
   height: 38px;
-  font-size: 32px;
+  font-size: 2em;
 }
+/* Campanha Arraia */
