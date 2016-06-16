@@ -2,6 +2,7 @@
   RST-TAC V.1.18
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 /* Rebuild Grid Class */
 .tac-box-clear{
   clear: both;
@@ -276,3 +277,19 @@ p.right-text a{
   background: #9e4041 !important;
 }
 /* BG Home Personalizado */
+
+.figure-box-default {
+  position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  color: #ffcc32;
+}
+.countdown-img {
+  position: absolute;
+  bottom: 37px;
+  left: 27.2%;
+  right: 0;
+  width: 375px;
+  height: 38px;
+  font-size: 32px;
+}
