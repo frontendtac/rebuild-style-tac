@@ -1,5 +1,5 @@
 /*
-  RST-TAC V.1.32
+  RST-TAC V.1.33
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
@@ -58,6 +58,10 @@
 .tac-bottom-box {
 }
 /* Rebuild Grid Class */
+
+.theme-color-1 {
+  background-color: #fff;
+}
 
 .offers, .tac-box-default {
   position: relative;
