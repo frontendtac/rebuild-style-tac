@@ -1,5 +1,5 @@
 /*
-  RST-TAC V.1.37
+  RST-TAC V.1.42
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
@@ -278,6 +278,18 @@ p.right-text a{
   margin: 0 auto;
   max-width: 100%;
 }
+
+h2.cupom-modal {
+  position: absolute;
+  top: 422px;
+  left: 86px;
+  width: 330px;
+  height: 62px;
+  background: #f7f6df;
+  color: #66655a;
+  font-family: courier new;
+  font-size: 54px;
+}
 /* Modal Cookie - Newsletter */
 
 /* ## Legado ## */
@@ -290,15 +302,19 @@ footer {
     padding: 20px 0 20px 0;
     position: relative;
 }
+
+#bannerTV {
+  padding-bottom: 0;
+}
 /* ## Legado ## */
 
 /* BG Home Personalizado */
-.home section#content{
+/*.home section#content{
   background: #9e4041 !important;
 }
 .home.home-b section#content{
   background: #f3f3f3 !important;
-}
+}*/
 /* BG Home Personalizado */
 
 /* Campanha Arraia */
@@ -311,7 +327,7 @@ footer {
 .countdown-img {
   position: absolute;
   bottom: 48px;
-  left: 34%;
+  left: 35%;
   right: 0;
   max-width: 375px;
   height: 38px;
@@ -323,7 +339,8 @@ footer {
     font-size: 36px;
 }
 .figure-box-default .countdown-item.hour{
-  width: 85px;
+  width: 75px;
+  padding-left: 5px;
 }
 .figure-box-default .countdown-item.min{
   width: 75px;
