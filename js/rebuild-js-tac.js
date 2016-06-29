@@ -1,5 +1,5 @@
 /*
-  RJS-TAC V.1.36
+  RJS-TAC V.2.00
 */
 // Calc freight feature
 jQuery(document).ready(function($) {
@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
 // Toggle List Itens
 
 // Installment Dom Verify - Adding aditional Info
-jQuery('.installment-show').click(function($) {
+jQuery('.installment-show').one( 'click', function($) {
 	setTimeout(function() { 
 		if (jQuery(".tbl-payment-system").length) {
 			var getTexts = [];
@@ -57,6 +57,7 @@ jQuery('.installment-show').click(function($) {
 			var elements = jQuery('table td:contains(X)').parent().nextUntil().addBack().children(':first-child');
 			elements.each(function() {
 				jQuery(this).text(jQuery(this).text().replace('X S/JUROS', '1X S/JUROS'));
+				jQuery(this).text(jQuery(this).text().replace('1X S/JUROS', '1X S/JUROS'));
 				jQuery(this).text(jQuery(this).text().replace('21X S/JUROS', '2X S/JUROS'));
 				jQuery(this).text(jQuery(this).text().replace('31X S/JUROS', '3X S/JUROS'));
 				jQuery(this).text(jQuery(this).text().replace('41X S/JUROS', '4X S/JUROS'));
@@ -74,5 +75,13 @@ jQuery('.installment-show').click(function($) {
 });
 // Installment Dom Verify - Adding aditional Info
 
-
-
+// Função para exibir ou não div de mostruário em lojas
+jQuery(document).ready(function() {	
+	setTimeout(function() { 
+		if ( $('.lojaItem').length ) {
+		} else {
+		    $('.grayBox.mostruario').css('display', 'none');
+		}
+	}, 100);
+});
+// Função para exibir ou não div de mostruário em lojas
