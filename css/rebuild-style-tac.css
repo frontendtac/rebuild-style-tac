@@ -1,5 +1,5 @@
 /*
-  RST-TAC V.1.64
+  RST-TAC V.1.67
 */
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
@@ -343,7 +343,8 @@ footer {
   padding-left: 5px;
 }
 .figure-box-default .countdown-item.hour:before,
-.regua-figure-box-default .countdown-item.hour:before{
+.regua-figure-box-default .countdown-item.hour:before,
+.header-campanha-countdown.countdown-cantinho .countdown-item.hour:before{
   content: 'Acaba em ';
 }
 .figure-box-default .countdown-item.min{
@@ -473,6 +474,55 @@ ul.list-items-menu-campanha li a:hover,
 .activeItem {
   background-color: #ffcc32;
   color: #034b85 !important;
+}
+
+.bannerHeadTop {
+  text-align: center;
+}
+
+.container-countdown {
+    position: relative;
+    width: 100%;
+    max-width: 999px;
+    margin: 0 auto;
+}
+
+.header-campanha-countdown.countdown-cantinho {
+    height: auto;
+    max-width: 355px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 472px;
+    top: -60px;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1920px) {
+  .header-campanha-countdown.countdown-cantinho {
+      max-width: 375px;
+      left: 468px;
+      top: -80px;
+      font-size: 21px;
+  } 
+}
+
+.header-campanha.campanha-cantinho {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header-campanha.campanha-cantinho img {
+  width: 100%; 
+  height: auto; 
+  max-width: 1900px; 
+  max-height: 300px;
 }
 /* Campanhas */
 
