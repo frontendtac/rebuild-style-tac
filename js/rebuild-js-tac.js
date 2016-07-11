@@ -1,5 +1,5 @@
 /*
-  RJS-TAC V.2.00
+  RJS-TAC V.3.4
 */
 // Calc freight feature
 jQuery(document).ready(function($) {
@@ -68,7 +68,9 @@ jQuery('.installment-show').one( 'click', function($) {
 				jQuery(this).text(jQuery(this).text().replace('9X S/JUROS', '9X S/JUROS'));
 				jQuery(this).text(jQuery(this).text().replace('10X S/JUROS', '10X S/JUROS'));
 				jQuery(this).text(jQuery(this).text().replace('11X S/JUROS', '11X S/JUROS'));
-				jQuery(this).text(jQuery(this).text().replace('12X S/JUROS', '12X S/JUROS'));
+				jQuery(this).text(jQuery(this).text().replace('12X S/JUROS', '12X S/JUROS'));				
+				jQuery(this).text(jQuery(this).text().replace('S/JUROS', 'SEM JUROS'));
+				jQuery(this).text(jQuery(this).text().replace('C/JUROS', 'COM JUROS'));
 			});
 		}
 	}, 100);
@@ -85,3 +87,23 @@ jQuery(document).ready(function() {
 	}, 100);
 });
 // Função para exibir ou não div de mostruário em lojas
+
+// Função para condicionar exibição de pagamento no boleto
+jQuery(document).ready(function() {	
+	setTimeout(function() { 
+		if ( $('#divBoleto').length ) {
+
+	    var valorMinimoBoleto = parseFloat('1.001');
+	    var	valorTratado = parseFloat($("#divBoleto .valor em").text().replace('R$ ',''));
+	    var	valorBoleto = valorTratado;
+	    	if ( valorBoleto >= valorMinimoBoleto ) {    		
+	    		//console.log('valor exibe boleto');
+	    	} else {
+	    		$('#divBoleto.boleto').hide();
+	    		$('#mainContentSide .box .other-payment-method #divCredito').css('padding-top','10px');
+	    		//console.log('valor não exibe boleto');
+	    	};
+	    }
+	}, 5000);
+});
+// Função para condicionar exibição de pagamento no boleto

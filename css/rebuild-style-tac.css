@@ -1,6 +1,7 @@
 /*
-  RST-TAC V.1.53
+  RST-TAC V.1.64
 */
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300,300italic,400italic,700,700italic,800,800italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
@@ -320,69 +321,71 @@ footer {
 /* Campanhas */
 .figure-box-default {
   position: relative;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  color: #ffcc32;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: #fff;
 }
 .countdown-img {
   position: absolute;
-  bottom: 48px;
-  left: 35%;
-  right: 0;
-  max-width: 375px;
+  bottom: 100px;
+  left: 470px;
+  max-width: 455px;
   height: 38px;
-  font-size: 38px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .figure-box-default .countdown-item {
     display: inline-block;
-    font-size: 36px;
 }
 .figure-box-default .countdown-item.hour{
-  width: 75px;
+  /*width: 75px;*/
   padding-left: 5px;
 }
+.figure-box-default .countdown-item.hour:before,
+.regua-figure-box-default .countdown-item.hour:before{
+  content: 'Acaba em ';
+}
 .figure-box-default .countdown-item.min{
-  width: 75px;
+  /*width: 75px;*/
 }
 .figure-box-default .countdown-item.sec{
-  width: 82px;
+  /*width: 82px;*/
 }
 .figure-box-default .countdown-item.mili{
-  width: 68px;
+  /*width: 68px;*/
 }
 
 .regua-countdown-img {
-  position: absolute;
-  bottom: 42px;
-  left: 686px;
-  max-width: 375px;
-  height: 38px;
-  font-size: 20px;
+    position: absolute;
+    bottom: 12px;
+    left: 610px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .regua-figure-box-default {
-  position: relative;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  color: #ffcc32;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #fff;
 }
 
 .regua-figure-box-default .countdown-item {
     display: inline-block;
-    font-size: 36px;
+    /*font-size: 36px;*/
 }
 .regua-figure-box-default .countdown-item.hour{
-  width: 62px;
+  /*width: 62px;*/
 }
 .regua-figure-box-default .countdown-item.min{
-  width: 60px;
+  /*width: 60px;*/
 }
 .regua-figure-box-default .countdown-item.sec{
-  width: 70px;
+  /*width: 70px;*/
 }
 .regua-figure-box-default .countdown-item.mili{
-  width: 68px;
+  /*width: 68px;*/
 }
 
 ul.menu-selo-azul {
@@ -595,3 +598,147 @@ ul.list-static-menu-sticky li a:hover {
   background-color: #074288;
   color: #ffcc32;
 }
+
+.productDescription {
+  width: calc(100% - 40px);
+}
+
+#descriptionWrap .spec {
+  display: none;
+}
+
+/* Re-order installment table */
+.tbl-payment-system {
+  background-color: #064288;
+}
+
+.tbl-payment-system tbody {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tbl-payment-system tbody tr:first-child {
+  width: 100%;
+}
+
+.tbl-payment-system tbody tr:not(:first-child) {
+  color: #fff;
+  width: 50%;
+}
+
+.tbl-payment-system tbody .parcelas + td {
+  color: #FFCB61;
+  font-weight: bold;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(2) {
+  order: 1;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(8) {
+  order: 2;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(3) {
+  order: 3;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(9) {
+  order: 4;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(4) {
+  order: 5;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(10) {
+  order: 6;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(5) {
+  order: 7;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(11) {
+  order: 8;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(6) {
+  order: 9;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(12) {
+  order: 10;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(7) {
+  order: 11;
+}
+
+.tbl-payment-system tbody tr:nth-of-type(13) {
+  order: 12;
+}
+
+.debito {
+    width: calc(50% - 47px);
+    float: left;
+    padding-left: 47px;
+    padding-top: 19px;
+    position: relative;
+}
+
+div.debito:before {
+    content: '';
+    display: block;
+    background-size: cover;
+    width: 37px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    top: 34px;
+}
+
+div.debito:after {
+    content: 'Débito Online';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.debito ~ div.debito:after {
+    content: '';
+}
+
+div.debito:before {
+  background-image: url('http://toqueacampainha.vteximg.com.br/arquivos/visa-eletron-icon-parcelas.png');
+}
+
+div.debito ~ div.debito:before {
+  background-image: url('http://toqueacampainha.vteximg.com.br/arquivos/maestro-icon-parcelas.png');
+}
+
+.debito h3{
+  display: none;  
+}
+
+#mainContentSide .box .other-payment-method .wrapper {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    /*border-bottom: 1px solid #215692;*/
+    margin-bottom: 15px;
+}
+
+p.obsJuros {
+    font-weight: initial;
+    clear: both;
+}
+
+#mainContentSide .box .other-payment-method #divCredito {
+    border-bottom: 1px solid #215692;
+    margin-bottom: 10px;
+}
+/* Re-order installment table */
